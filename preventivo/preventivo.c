@@ -9,7 +9,7 @@ int main() {
     float costo_tempo = 0.0; // costo tempo
     float costo_totale = 0.0; //costo parziale + il costo della commessa
     int scelta_materiale = 0; //può essere tra pla-tpu-ptg
-    int commesse;
+    int commesse;//commessa è il costo del nostro lavoro
     int uscita=0;
 
         do{
@@ -23,13 +23,13 @@ int main() {
 
             switch (scelta_materiale) {
                 case 1:
-                    costo_materiale = 0.03;
+                    costo_materiale = 0.03;//PLA
                     break;
                 case 2:
-                    costo_materiale = 0.05;
+                    costo_materiale = 0.05;//TPU
                     break;
                 case 3:
-                    costo_materiale = 0.06;
+                    costo_materiale = 0.06;//PTG
                     break;
                 default:
                     printf("Scelta non valida.");
